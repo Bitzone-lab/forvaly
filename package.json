@@ -1,7 +1,7 @@
 {
-  "name": "ts_template",
+  "name": "forvaly",
   "version": "1.0.0-alpha.1",
-  "description": "",
+  "description": "Validation",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
@@ -11,7 +11,9 @@
   },
   "keywords": [
     "typescript",
-    "javascript"
+    "javascript",
+    "form",
+    "api"
   ],
   "author": "Erick <ertriilive@gmail.com> (https://github.com/ertrii)",
   "license": "MIT",

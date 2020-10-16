@@ -1,21 +1,6 @@
-Typescript Template
+Forvaly
 =========
 
 ```
-npm install
+npm install forvaly
 ```
-
-* typescript
-* jest
-* eslint
-* prettier
-
-
-## Scripts
-
-| script |  description  |
-|--------|---------------|
-| `test`   | run test |
-| `test:watch`   | run test watch |
-| `tsc`   | compile typescript |
-| `lint`  | linter |
