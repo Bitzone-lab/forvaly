@@ -1,5 +1,0 @@
-export const NOT_NUMBER = 'Its not type number'
-export const NOT_STRING = 'Its not type string'
-export const NOT_BOOLEAN = 'Its not type boolean'
-export const NOT_INSTANCE = 'Its not insntance of contructor'
-export const NOT_NULL = 'Its not null'

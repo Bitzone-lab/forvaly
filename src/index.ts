@@ -1,28 +1,16 @@
-// import ForvalyInterface from './interfaces/ForvalyInterface'
-import Observer from './management/Observer'
-import Types from './management/Types'
+import observer from './observer'
+import Types from './types'
+import { Valii } from './typing'
 
-export default class Forvaly<T> {
-  private form: T
-  private message: string
-  private observers: Array<Observer> = []
+export default function valii<T>(model: T): Valii<T> {
+  const { on, run } = observer(model)
 
-  constructor(form: T, message: string = '') {
-    this.form = form
-    this.message = message
+  const list: any = {}
+  for (const [key, value] of Object.entries(model)) {
+    list[key] = new Types(key, value, on)
   }
 
-  /**
-   * Search property of form
-   * @param fieldname Key of form
-   */
-  field<K extends keyof T>(fieldname: K): Types {
-    const observer: Observer = new Observer(this.form[fieldname])
-    this.observers.push(observer)
-    return new Types(observer)
-  }
+  list.__run__ = run
 
-  run(): boolean {
-    return true
-  }
+  return list
 }

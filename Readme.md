@@ -2,5 +2,5 @@ Forvaly
 =========
 
 ```
-npm install forvaly
+npm install valii
 ```
