@@ -10,5 +10,5 @@
   "prettier.singleQuote": true,
   "prettier.printWidth": 120,
   "prettier.tabWidth": 2,
-  "prettier.endOfLine": "cr"
+  "prettier.endOfLine": "crlf"
 }
